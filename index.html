@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="John Vincent De los Santos — IT professional specializing in software development, cloud technologies, and enterprise application support." />
+  <title> Vince | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-effects" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="grid-overlay"></div>
+    <canvas id="particles"></canvas>
+  </div>
+
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="nav-logo" href="#" data-page="home">
+        <span class="logo-bracket">&lt;</span>Vince<span class="logo-bracket"> /&gt;</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#" data-page="home" class="nav-link active">Home</a></li>
+        <li><a href="#" data-page="projects" class="nav-link">Projects</a></li>
+        <li><a href="#" data-page="certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#" data-page="experience" class="nav-link">Experience</a></li>
+        <li><a href="#" data-page="education" class="nav-link">Education</a></li>
+        <li><a href="#" data-page="contact" class="nav-link">Contact me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <div class="page-viewport">
+    <section id="home" class="page active" aria-hidden="false">
+      <div class="hero">
+        <p class="eyebrow reveal">// software engineer @ amdocs</p>
+        <h1 class="reveal reveal-delay-1">
+          Hi, I'm <span class="gradient-text">Vince</span>
+        </h1>
+        <p class="lead reveal reveal-delay-2">
+          <span id="typed-text"></span><span class="typed-cursor" aria-hidden="true">|</span>
+        </p>
+        <p class="hero-bio reveal reveal-delay-2">
+          Software Engineer at Amdocs with experience in software development, cloud technologies, and
+          enterprise application support. Skilled in JavaScript, the MERN stack, and SQL — with hands-on
+          work in SAP testing, ServiceNow ITSM, and multi-cloud certifications (AWS, Azure, Oracle, Google).
+        </p>
+        <div class="code-window reveal reveal-delay-3">
+          <div class="code-window-bar">
+            <span></span><span></span><span></span>
+            <code class="code-filename">profile.js</code>
+          </div>
+          <pre class="code-snippet"><code><span class="tok-keyword">const</span> profile = {
+  <span class="tok-prop">role</span>: <span class="tok-string">'Software Engineer'</span>,
+  <span class="tok-prop">company</span>: <span class="tok-string">'Amdocs'</span>,
+  <span class="tok-prop">stack</span>: [<span class="tok-string">'JavaScript'</span>, <span class="tok-string">'MERN'</span>, <span class="tok-string">'SQL'</span>],
+  <span class="tok-prop">certs</span>: [<span class="tok-string">'AWS'</span>, <span class="tok-string">'Azure AZ-900'</span>, <span class="tok-string">'ServiceNow CSA'</span>],
+  <span class="tok-prop">status</span>: <span class="tok-string">'open to opportunities'</span>
+};</code></pre>
+        </div>
+        <div class="skill-tags reveal reveal-delay-4">
+          <span class="tag">JavaScript</span>
+          <span class="tag">MERN</span>
+          <span class="tag">SQL</span>
+          <span class="tag">ServiceNow</span>
+          <span class="tag">AWS</span>
+          <span class="tag">Azure</span>
+          <span class="tag">SAP</span>
+          <span class="tag">React</span>
+        </div>
+        <div class="hero-actions reveal reveal-delay-5">
+          <button type="button" class="btn btn-primary magnetic" data-page="projects">View Projects</button>
+          <button type="button" class="btn btn-outline magnetic" data-page="contact">Contact me</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="page" aria-hidden="true">
+      <h1 class="page-title reveal">Projects</h1>
+      <p class="section-intro reveal reveal-delay-1">Hands-on work from bootcamp, university, and professional roles.</p>
+      <div class="card-grid">
+        <article class="card tilt-card reveal reveal-delay-1">
+          <div class="card-glow"></div>
+          <span class="card-num">01</span>
+          <h2>Expense Tracking System</h2>
+          <p class="card-tech">MERN · MongoDB · Express · React · Node.js</p>
+          <p>Full-stack app built during the OneCodeCamp bootcamp. Streamlines financial record-keeping with real-time updates so users can monitor and manage expenses effectively.</p>
+          <div class="card-links">
+            <span class="card-meta">OneCodeCamp · Sydney · 2024–2025</span>
+          </div>
+        </article>
+        <article class="card tilt-card reveal reveal-delay-2">
+          <div class="card-glow"></div>
+          <span class="card-num">02</span>
+          <h2>Automated Attendance System</h2>
+          <p class="card-tech">Facial Recognition · AI · Team Leadership</p>
+          <p>Led development of an automated attendance system using facial recognition at the University of Saint La Salle — replacing manual tracking, managing timelines, and delivering on schedule.</p>
+          <div class="card-links">
+            <span class="card-meta">B.S. Computer Engineering capstone</span>
+          </div>
+        </article>
+        <article class="card tilt-card reveal reveal-delay-3">
+          <div class="card-glow"></div>
+          <span class="card-num">03</span>
+          <h2>Branded Web & CMS Solutions</h2>
+          <p class="card-tech">HTML · CSS · JavaScript · WordPress · SQL</p>
+          <p>Designed user-focused web applications and visual assets at Rion Labs PH. Built and maintained SQL databases and delivered tailored WordPress CMS implementations with the CMO.</p>
+          <div class="card-links">
+            <span class="card-meta">Rion Labs PH · Software Engineer · 2025</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="certifications" class="page" aria-hidden="true">
+      <h1 class="page-title reveal">Certifications</h1>
+      <p class="section-intro reveal reveal-delay-1">Credentials from your <a href="https://www.linkedin.com/in/jvdelossantos/" target="_blank" rel="noopener">LinkedIn profile</a> with official badges, sorted newest first.</p>
+      <ul class="info-list cert-list">
+        <li class="cert-item reveal reveal-delay-1">
+          <div class="cert-badge-wrap">
+            <img src="assets/certifications/sap-bdc.svg" alt="SAP Business Data Cloud badge" class="cert-badge-img" loading="lazy" />
+          </div>
+          <div class="cert-body">
+            <strong>Positioning SAP Business Data Cloud — Course Completion</strong>
+            <span class="cert-issuer">SAP</span>
+            <span class="cert-dates">Issued Dec 2025</span>
+          </div>
+        </li>
+        <li class="cert-item reveal reveal-delay-2">
+          <div class="cert-badge-wrap">
+            <div class="credly-badge" data-iframe-width="110" data-iframe-height="110" data-share-badge-id="826efe98-dad7-4776-bb0e-8d9510cf251d" data-share-badge-host="https://www.credly.com"></div>
+          </div>
+          <div class="cert-body">
+            <strong>Leveraging SAP Demo Environment 2.0 — Record of Achievement</strong>
+            <span class="cert-issuer">SAP</span>
+            <span class="cert-dates">Issued Nov 2025</span>
+          </div>
+        </li>
+        <li class="cert-item reveal reveal-delay-3">
+          <div class="cert-badge-wrap">
+            <div class="credly-badge" data-iframe-width="110" data-iframe-height="110" data-share-badge-id="52445ad1-6712-4eb4-bce8-e72093cf4f9a" data-share-badge-host="https://www.credly.com"></div>
+          </div>
+          <div class="cert-body">
+            <strong>Introducing SAP ABAP Platform Fundamentals — Record of Achievement</strong>
+            <span class="cert-issuer">SAP</span>
+            <span class="cert-dates">Issued Oct 2025</span>
+          </div>
+        </li>
+        <li class="cert-item reveal reveal-delay-4">
+          <div class="cert-badge-wrap">
+            <img src="assets/certifications/oracle-ai.png" alt="Oracle OCI AI Foundations badge" class="cert-badge-img" loading="lazy" />
+          </div>
+          <div class="cert-body">
+            <strong>Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate</strong>
+            <span class="cert-issuer">Oracle</span>
+            <span class="cert-dates">Issued Oct 2025 · Expires Oct 2027</span>
+          </div>
+        </li>
+        <li class="cert-item reveal reveal-delay-5">
+          <div class="cert-badge-wrap">
+            <img src="assets/certifications/oracle-foundations.png" alt="Oracle OCI Foundations badge" class="cert-badge-img" loading="lazy" />
+          </div>
+          <div class="cert-body">
+            <strong>Oracle Cloud Infrastructure 2025 Certified Foundations Associate</strong>
+            <span class="cert-issuer">Oracle</span>
+            <span class="cert-dates">Issued Sep 2025 · Expires Sep 2027</span>
+          </div>
+        </li>
+        <li class="cert-item reveal reveal-delay-1">
+          <div class="cert-badge-wrap">
+            <img src="assets/certifications/google-digital-leader.png" alt="Google Cloud Digital Leader badge" class="cert-badge-img" loading="lazy" />
+          </div>
+          <div class="cert-body">
+            <strong>Cloud Digital Leader Certification</strong>
+            <span class="cert-issuer">Google</span>
+            <span class="cert-dates">Issued Sep 2025 · Expires Sep 2028</span>
+          </div>
+        </li>
+        <li class="cert-item reveal reveal-delay-2">
+          <div class="cert-badge-wrap">
+            <img src="assets/certifications/kyndryl-ai-foundation.png" alt="Kyndryl AI Foundation badge" class="cert-badge-img" loading="lazy" />
+          </div>
+          <div class="cert-body">
+            <strong>AI Foundation</strong>
+            <span class="cert-issuer">Kyndryl</span>
+            <span class="cert-dates">Issued Jul 2025</span>
+          </div>
+        </li>
+        <li class="cert-item reveal reveal-delay-3">
+          <div class="cert-badge-wrap">
+            <img src="assets/certifications/cognitive-ds101.svg" alt="Data Science 101 badge" class="cert-badge-img" loading="lazy" />
+          </div>
+          <div class="cert-body">
+            <strong>Data Science 101</strong>
+            <span class="cert-issuer">Cognitive Class</span>
+            <span class="cert-dates">Issued Jul 2025</span>
+          </div>
+        </li>
+        <li class="cert-item reveal reveal-delay-4">
+          <div class="cert-badge-wrap">
+            <div class="credly-badge" data-iframe-width="110" data-iframe-height="110" data-share-badge-id="237a6d9b-e944-4a96-ad04-3e694960c78d" data-share-badge-host="https://www.credly.com"></div>
+          </div>
+          <div class="cert-body">
+            <strong>Data Science Foundations — Level 1</strong>
+            <span class="cert-issuer">IBM</span>
+            <span class="cert-dates">Issued Jul 2025</span>
+          </div>
+        </li>
+        <li class="cert-item reveal reveal-delay-5">
+          <div class="cert-badge-wrap">
+            <img src="assets/certifications/azure-fundamentals.svg" alt="Microsoft Azure Fundamentals badge" class="cert-badge-img" loading="lazy" />
+          </div>
+          <div class="cert-body">
+            <strong>Microsoft Certified: Azure Fundamentals (AZ-900)</strong>
+            <span class="cert-issuer">Microsoft</span>
+            <span class="cert-dates">Issued Oct 2024</span>
+          </div>
+        </li>
+        <li class="cert-item reveal reveal-delay-1">
+          <div class="cert-badge-wrap">
+            <img src="assets/certifications/servicenow-csa.svg" alt="ServiceNow CSA badge" class="cert-badge-img" loading="lazy" />
+          </div>
+          <div class="cert-body">
+            <strong>ServiceNow Certified System Administrator (CSA)</strong>
+            <span class="cert-issuer">ServiceNow</span>
+          </div>
+        </li>
+        <li class="cert-item reveal reveal-delay-2">
+          <div class="cert-badge-wrap">
+            <img src="assets/certifications/servicenow-welcome.svg" alt="Welcome to ServiceNow badge" class="cert-badge-img" loading="lazy" />
+          </div>
+          <div class="cert-body">
+            <strong>Micro-Certification: Welcome to ServiceNow</strong>
+            <span class="cert-issuer">ServiceNow</span>
+          </div>
+        </li>
+        <li class="cert-item reveal reveal-delay-3">
+          <div class="cert-badge-wrap">
+            <img src="assets/certifications/aws-cloud-practitioner.png" alt="AWS Cloud Practitioner badge" class="cert-badge-img" loading="lazy" />
+          </div>
+          <div class="cert-body">
+            <strong>AWS Certified Cloud Practitioner</strong>
+            <span class="cert-issuer">Amazon Web Services</span>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section id="experience" class="page" aria-hidden="true">
+      <h1 class="page-title reveal">Experience</h1>
+      <p class="section-intro reveal reveal-delay-1">Professional roles in software engineering, consulting, and web development.</p>
+      <ul class="info-list">
+        <li class="reveal reveal-delay-1">
+          <strong>Amdocs — Software Engineer</strong>
+          May 2026–Present · Developing and supporting software solutions in a global technology environment, applying full-stack and enterprise development practices.
+        </li>
+        <li class="reveal reveal-delay-2">
+          <strong>Kyndryl — Associate, Application Consultant</strong>
+          Jun 2025–May 2026 · ServiceNow ITSM first-level support, SAP application testing, and key contributor to Kyndryl Philippines SAP authorization. Participated in AI-focused internal hackathons.
+        </li>
+        <li class="reveal reveal-delay-3">
+          <strong>Rion Labs PH — Software Engineer</strong>
+          Feb 2025–Jun 2025 · Built user-focused web applications (HTML, CSS, JavaScript), maintained SQL databases, and delivered WordPress CMS solutions with the Chief Marketing Officer.
+        </li>
+      </ul>
+    </section>
+
+    <section id="education" class="page" aria-hidden="true">
+      <h1 class="page-title reveal">Education</h1>
+      <p class="section-intro reveal reveal-delay-1">Formal education, bootcamp training, and campus leadership.</p>
+      <ul class="info-list">
+        <li class="reveal reveal-delay-1">
+          <strong>University of Saint La Salle — B.S. Computer Engineering</strong>
+          Aug 2020–Jun 2024 · Led an automated attendance system using facial recognition; managed project timelines and introduced AI-driven features.
+        </li>
+        <li class="reveal reveal-delay-2">
+          <strong>OneCodeCamp — Full Stack Engineer Bootcamp</strong>
+          Nov 2024–Mar 2025 · MERN stack (HTML, CSS, JavaScript, MongoDB, Express, React, Node.js); built an Expense Tracking System with real-time updates.
+        </li>
+        <li class="reveal reveal-delay-3">
+          <strong>Leadership & community</strong>
+          Student council member · Led initiatives promoting technology and engineering programs on campus.
+        </li>
+      </ul>
+    </section>
+
+    <section id="contact" class="page" aria-hidden="true">
+      <h1 class="page-title reveal">Contact me</h1>
+      <p class="section-intro reveal reveal-delay-1">Open to roles in software development, cloud, and IT. Reach out anytime.</p>
+      <ul class="contact-details reveal reveal-delay-2">
+        <li>
+          <span class="contact-label">Email</span>
+          <a href="mailto:jovinds24@gmail.com">jovinds24@gmail.com</a>
+        </li>
+        <li>
+          <span class="contact-label">Phone</span>
+          <a href="tel:+639065731422">+63 906 573 1422</a>
+        </li>
+        <li>
+          <span class="contact-label">LinkedIn</span>
+          <a href="https://linkedin.com/in/jvdelossantos" target="_blank" rel="noopener">linkedin.com/in/jvdelossantos</a>
+        </li>
+        <li>
+          <span class="contact-label">Portfolio</span>
+          <a href="https://jovinds-portfolio.com" target="_blank" rel="noopener">jovinds-portfolio.com</a>
+        </li>
+      </ul>
+      <form class="contact-form reveal reveal-delay-3" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <label>
+          Name
+          <input type="text" name="name" required placeholder="Your name" />
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" required placeholder="you@example.com" />
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="5" required placeholder="Your message..."></textarea>
+        </label>
+        <button type="submit" class="btn btn-primary magnetic">Send message</button>
+      </form>
+      <p class="contact-alt reveal reveal-delay-4">Prefer email? <a href="mailto:jovinds24@gmail.com">jovinds24@gmail.com</a></p>
+    </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>&copy; <span id="year"></span> John Vincent De los Santos. Crafted with curiosity.</p>
+      <ul class="footer-social">
+        <li><a href="https://linkedin.com/in/jvdelossantos" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://jovinds-portfolio.com" target="_blank" rel="noopener">Portfolio</a></li>
+        <li><a href="mailto:jovinds24@gmail.com">Email</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script async src="https://cdn.credly.com/js/badge.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
